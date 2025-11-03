@@ -1,0 +1,12 @@
+LOGS
+Event ID: 4624
+What it means: successful login (type 5 – system process)
+Why it's important: helps distinguish between legitimate and suspicious logins. The SOC monitors for repeated or unusual login types (for example, type 10 – remote, may indicate RDP).
+  Event ID: 1012
+Source: DNS Client Events
+What it means: The DNS service was unable to read the local hosts file
+Why it's important: May indicate DNS issues or an attempt to modify the hosts file—potentially important for SOCs when analyzing network anomalies
+Event ID: 8303
+Source: System Restore
+What it means: Error creating or verifying a restore point (shadow copy)
+Why it's important: This could simply be a system error, but it's also used by attackers to delete restore points before ransomware encryption.
